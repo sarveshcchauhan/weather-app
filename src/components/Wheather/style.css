@@ -1,0 +1,242 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+}
+
+.wheather-bg {
+    /* background-image: url("../../assets/wheather/sample.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    padding: 3.6rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo  .wi{
+    font-size: 4rem;
+}
+
+h1{
+    color: #FFF;
+}
+
+i {
+    color: #FFF;
+    cursor: pointer;
+}
+
+.wi{
+    font-size: 2rem;
+}
+
+.text-white {
+    color: #FFF;
+}
+
+.wheather-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3.6rem;
+    margin-top: 6%;
+}
+
+.degree h3 {
+    font-size: 9rem;
+    font-weight: 600;
+}
+
+.location-details {
+    display: flex;
+    flex-direction: column;
+    padding: 22px;
+}
+
+.location-details h4 {
+    font-size: 4.5rem;
+    font-weight: 400;
+}
+
+.location-details p {
+    font-size: 18px;
+}
+
+.initial {
+    font-size: 22px;
+    margin-left: -12px;
+}
+
+.top-layer {
+    z-index: 10;
+}
+
+
+.side-dock-hidden {
+    display: none;
+}
+
+
+.side-dock {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #4134349e;
+    color: #FFF;
+    width: 400px;
+    height: 100%;
+    transition: all 0.35s;
+}
+
+.close-btn {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 4.3rem;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2.6rem;
+}
+
+
+.search-box i {
+
+    color: #3d3e50;
+    position: absolute;
+    padding-right: 10px;
+    right: 45px;
+
+}
+
+input[type="text"] {
+    outline: none;
+}
+
+.search-field {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    padding-left: 20px;
+    box-shadow: 0px 0px 3px 2px #a4c5c3;
+}
+
+.search-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-data>ul {
+    list-style: none;
+    padding: 1rem 3rem;
+
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #808883b0;
+    color: #000;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding: 0 16px;
+}
+
+.weather-seaction-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    padding: 0 3.6rem;
+}
+
+.colm-3{
+   display: flex;
+   flex-direction: column;
+   align-items:center;
+}
+
+.weather-section-data{
+    margin-top: 10px;
+    color:#FFF;
+}
+
+.fw-b{
+    font-weight: bold;
+}
+
+.wheather-icon > .wi{
+    font-size: 5rem;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 980px) {
+    .navigation{
+        padding: 1.6rem;
+    }
+
+    .logo .wi {
+        font-size:2.6rem;
+    }
+
+    .wheather-details{
+        padding: 0 1.6rem;
+        margin-top:3%;
+        flex-direction: column;
+    }
+
+    .degree h3 {
+        font-size: 4rem;
+    }
+
+    .location-details {
+        padding:0 10px;
+        margin-bottom: 30px;
+    }
+
+
+    .location-details h4 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .initial {
+        font-size: 14px;
+        margin-left: -8px;
+    }
+
+    .wheather-icon{
+        position: absolute;
+        right: 100px;
+    }
+
+    .wheather-icon > .wi {
+        font-size: 3rem;
+    }
+
+    .weather-seaction-details {
+        width: 100%;
+    }
+}
+
+
