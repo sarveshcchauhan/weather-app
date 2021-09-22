@@ -28,3 +28,4 @@ yarn-error.log*
 /src/components/Card
 /src/menu.js
 /public/images
+/.env
