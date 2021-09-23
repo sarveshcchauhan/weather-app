@@ -14,8 +14,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 To clone the repo by using  git clone https://github.com/sarveshcchauhan/weather-app
 
-# Intall Pacakage and start
+# Install Package and start
 
-After cloning use `npm i && npm start`
+After cloning use `npm i && npm start` to run the project
 
 
